@@ -18,7 +18,21 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 </head>
-
+<script type="module">
+  import{loadingController } from "https://cdn.jsdelvir.net/npm/@ionic/core/dist/ionic/index.exm.js";
+  window.loadingController = loadingController;
+</script>
+<script>
+  async function PleaseWait(){
+    const loading = await loadingController.create({
+      Message: "Porfavor espere..",
+      duration: 3000
+  });
+  await loading.present();
+  const { role,data } = await loading.ondiddismiss();
+  window.location.href="/LogIN"
+}
+</script>
 <body>
   <app-root></app-root>
 </body>

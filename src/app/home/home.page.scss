@@ -24,4 +24,65 @@
 
 #container a {
   text-decoration: none;
+  width: 300px; 
+  margin-left:auto; 
+  margin-right: auto; 
+}
+
+#rounded {
+  width: 100%;
+  height: 100px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 10px;
+  margin-bottom: 10px;  
+}
+
+
+ion-content{
+
+  --ion-background-color:#ebebeb;
+}
+
+ion-toolbar{
+
+  --ion-toolbar-background:#0b102c;
+}
+
+ion-toolbar{
+
+  --ion-toolbar-color:#ffffff;
+}
+
+ion-item{
+
+  --ion-item-color:#000000;
+}
+
+ion-item{
+
+  --ion-item-background:#e9e9e9;
+}
+
+ion-item{
+  max-height: 10vh;
+}
+
+ion-toolbar{
+  --min-height:110px!important;
+}
+
+ion-icon {
+  font-size: 500px;
+}
+
+ion-icon {
+  color: rgb(17, 17, 71);
+}
+
+.forg{
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 20px;
+  color:rgb(0, 23, 153);
 }
