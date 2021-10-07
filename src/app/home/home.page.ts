@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { LoadingController } from '@ionic/angular';
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -7,6 +7,20 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(private loadingCTrl: LoadingController) {
 
+  }
+  showLoading(){
+    this.loadingCTrl.create({
+      message: "Cargando...",
+      spinner: "dots"
+    }).then((loading) => {
+      loading.present();
+
+      setTimeout(() =>{
+
+      loading.dismiss();
+      },2000)
+    })
+  }
 }

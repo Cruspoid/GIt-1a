@@ -23,12 +23,12 @@
             <ion-label position="center" width="180">Contraseña</ion-label>
             <ion-input type="password" required></ion-input>
           </ion-item>
-          <a [routerLink]="['/forgot-password']" class="forg">Olvidaste tu contraseña?</a>
+          <a (click)="showLoading()" [routerLink]="['/forgot-password']" class="forg">Olvidaste tu contraseña?</a>
         </ion-title>
 
-        <ion-title class="ion-text-center"><ion-button onclick="PleaseWait();" [routerLink]="['/login']" color="warning">Ingresar</ion-button></ion-title>
+        <ion-title class="ion-text-center"><ion-button (click)="showLoading()" [routerLink]="['/login']" color="warning">Ingresar</ion-button></ion-title>
 
-        <ion-title class="ion-text-center"><ion-button [routerLink]="['/registration']" color="primary">Registrarse</ion-button></ion-title>
+        <ion-title class="ion-text-center"><ion-button (click)="showLoading()"[routerLink]="['/registration']" color="primary">Registrarse</ion-button></ion-title>
         
       </ion-col>
     </ion-row>

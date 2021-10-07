@@ -14,7 +14,7 @@
     <ion-row>
       <ion-col>
         <ion-title class="ion-text-center" width="180" height="180"><ion-icon name="qr-code-outline" style="zoom:0.6;" ></ion-icon></ion-title>
-        <ion-button type="submit" color="danger" expand="block">Escanear</ion-button>
+        <ion-button (click)="showToast()" type="submit" color="danger" expand="block">Escanear</ion-button>
       </ion-col>
       <ion-text color="primary">
         <p>Aprete el boton escanear para activar la camara y de esa manera poder registrar la asistencia a partir del codigo QR</p>
